@@ -43,7 +43,7 @@ function getReserves() public view returns (uint112 _reserve0, uint112 _reserve1
     _blockTimestampLast = blockTimestampLast;
 }
 ```
-reserve0, reserve1 은 [CFMM](./../1-CFMM/README.md) 에서 설명하던 $x*y=k$ 식의 $x,y$이다.
+reserve0, reserve1 은 [CFMM](./../CFMM/README.md) 에서 설명하던 $x*y=k$ 식의 $x,y$이다.
 
 핵심은, reserve0, reserve1, blockTimestampLast 가 선언된 방식에서 gas savings 를 달성하는 것이다. 그럼 선언된 모양을 보자.
 ```
