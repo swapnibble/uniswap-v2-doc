@@ -131,6 +131,6 @@ uint balance1Adjusted = balance1.mul(1000).sub(amount1In.mul(3));
 require(balance0Adjusted.mul(balance1Adjusted) >= uint(_reserve0).mul(_reserve1).mul(1000**2), 'UniswapV2: K');
 }
 ```
-0.3% 의 수수료를 뗀다음, 남은 수량을 계산하는 것이며, 그 후, require 로, K 값의 변화(감소)가 있었던 것인지 확인한다.([CFMM](./../1-CFMM/README.md) 에서 설명하던 $x*y=k$ 에서, swap 에서는 $k$ 가 변화가 생기면 안된다고 했다.) 
+0.3% 의 수수료를 뗀다음, 남은 수량을 계산하는 것이며, 그 후, require 로, K 값의 변화(감소)가 있었던 것인지 확인한다.([CFMM](./../CFMM/README.md) 에서 설명하던 $x*y=k$ 에서, swap 에서는 $k$ 가 변화가 생기면 안된다고 했다.) 
 
 정확한 input 수량만큼 현재 contract 으로 들어온 건지 여기서 확인하는 셈이다. ( 돈(token) 떼먹을 수 있다고 기대에 부풀지 말자 =.= )
