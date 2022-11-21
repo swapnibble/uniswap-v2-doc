@@ -5,7 +5,7 @@ Pair contract 은 Uniswap v2 의 핵심 contract 이고, CFMM 의 logic 이 구�
 ### 핵심 함수 swap()
 ![Swap()](./uni-v2-pair-swap.jpg)
 
-함수 singature 부터 line 별로 보자.
+함수 singnature 부터 line 별로 보자.
 
 line 159 :
 ```
